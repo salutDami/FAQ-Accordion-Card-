@@ -19,3 +19,4 @@
 # Avoid any node_modules files and parcel-cache files  being tracked 
 node_modules
 .parcel-cache
+dist
