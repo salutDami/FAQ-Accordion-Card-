@@ -1,0 +1,2 @@
+button[class~=accordion__btn]{color:var(--very-dark-greyish-blue);transition-property:color;transition-duration:.4s;transition-timing-function:ease-in}@media (hover:hover){button[class~=accordion__btn]:hover{color:var(--soft-red)}}img{animation:4s ease-in-out infinite alternate animate-image-illustration}@keyframes animate-image-illustration{0%{transform:translate(-50%)translateY(-63%)rotate(2deg)}to{transform:translate(-50%)translateY(-57%)rotate(-2deg)}}
+/*# sourceMappingURL=index.eae87de3.css.map */
