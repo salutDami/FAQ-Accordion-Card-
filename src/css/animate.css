@@ -1,0 +1,46 @@
+button[class~='accordion__btn']{
+  color: var(--very-dark-greyish-blue); 
+  transition-duration: 0.4s;
+  transition-property: color; 
+  transition-timing-function: ease-in; 
+}
+
+/* On devices that support hover inputs as their primary input which will exclude mobile phones */
+@media(hover:hover) { 
+  button[class~='accordion__btn']:hover {
+    color: var(--soft-red); 
+  }
+}
+
+
+/* A small subtle animation of the illustration */
+img {
+  animation: 4s ease-in-out 0s infinite alternate animate-image-illustration; 
+  -webkit-animation: 4s ease-in-out 0s infinite alternate animate-image-illustration;
+  -moz-animation: 4s ease-in-out 0s infinite alternate animate-image-illustration;
+}
+
+@keyframes animate-image-illustration {
+  0% {
+    transform: translateX(-50%) translateY(-63%) rotate(2deg); 
+  }
+
+  100% {
+    transform:  translateX(-50%) translateY(-57%) rotate(-2deg); 
+  }
+} 
+
+@-webkit-keyframes animate-image-illustration {
+  0% {
+    transform: translateX(-50%) translateY(-63%) rotate(2deg); 
+  }
+
+  100% {
+    transform:  translateX(-50%) translateY(-57%) rotate(-2deg); 
+  }
+}
+
+
+
+
+

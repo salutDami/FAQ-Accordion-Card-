@@ -1,0 +1,94 @@
+
+section[class~='section'] { 
+  background-color: var(--white); 
+  border-radius: var(--radius-8); 
+  position: relative;   
+  margin-block-start: var(--gap-180); 
+  width:min(100%, 92rem); 
+  margin-inline: auto; 
+  background-image: url(../../assets/images/bg-pattern-mobile.svg); 
+  background-repeat: no-repeat; 
+  background-position: center top; 
+}
+
+
+
+/* Accordion */
+
+button[class~='accordion__btn']{
+  font-weight: var(--fw-400); 
+  line-height: var(--line-height-normal); 
+  font-size: var(--fs-1); 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  padding-block: var(--space-2); 
+  cursor: pointer; 
+  outline: none; 
+  color: var(--very-dark-saturated-blue); 
+
+  /* The inline-size property is a LOGICAL PROPERTY that set the width of an element when the writing-mode is HORIZONTAL and hieght of an element when the writing-mode is VERTICAL. The big difference between inline-size and width is that unlike width which is a physical porperty, inline-size depends on what the user's writing mode is and will adjust it as the layout changes. */
+
+  inline-size: 100%; 
+  
+}
+
+
+button[class~='accordion__btn']:focus svg { 
+  outline: 3px solid var(--soft-red); 
+  outline-offset: 3px; 
+}
+
+
+button[aria-expanded='true'] svg {
+  transform: rotate(180deg); 
+}
+
+
+div[class='accordion'] {
+  margin-inline: var(--space-3); 
+  padding-bottom: var(--space-7); 
+}
+
+
+dt[class='accordion__description-title']:not(:first-child) {
+  border-top: 1px solid var(--light-greyish-blue); 
+}
+
+
+dd[class='accordion__description-definition'] {
+  margin-block-end: var(--space-3); 
+}
+
+dd[class='accordion__description-definition'] p { 
+  font-size: var(--fs-1); 
+  font-weight: var(--fw-400); 
+  line-height: var(--line-height-relaxed); 
+  color: var(--dark-greyish-blue); 
+}
+
+div[class='border-line'] {
+  width:100%;
+  height:1px; 
+  background-color: var(--light-greyish-blue); 
+}
+
+
+/* Illustration */
+img {
+  position: absolute; 
+  /* Move 50% away from the left of the section element which the image is relative.  */
+  left: 50%; 
+  
+  /* Move 50% back to the position so that the image can be centered irrespective of how the width of the section changes/increases.   */
+  transform:translate(-50%, -60%); 
+}
+
+button[class~='accordion__btn--active'] {
+  font-weight: var(--fw-700); 
+  color: var(--very-dark-saturated-blue); 
+  line-height: var(--line-height-normal); 
+}
+
+
+/* Check out this link to see the CSS only Accordion which I built ---> https://codepen.io/TraversetheDOM/pen/NWLyvZa */

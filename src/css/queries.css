@@ -1,0 +1,46 @@
+
+
+/* For desktop devices a device and browser width of  */
+@media only screen and (min-width: 81em) {
+  section[class~='flex'] {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-image: url(../../assets/images/bg-pattern-desktop.svg); 
+    background-repeat: no-repeat; 
+    background-position: right 542px bottom -93px;
+    background-size: cover; 
+  }
+
+   /* I need to unset the position property on the image */
+   img {
+    position: relative; 
+    left: 50%; 
+    top: 50%; 
+    transform: translateX(-118%); 
+  }
+
+  h1 {
+    text-align: left; 
+    margin-inline-start: var(--space-3); 
+  }
+
+  div[class='FAQ__container'] {
+    flex-basis: 60%; 
+  }
+
+
+  @keyframes animate-image-illustration {
+    0% { transfrom: translateX(-118%) translateY(20px) rotate(2deg); }
+
+    100% { transform: translateX(-118%) translateY(-20px) rotate(-2deg); }
+  }
+
+
+  @-webkit-keyframes animate-image-illustration {
+    0% { transfrom: translateX(-118%) translateY(20px) rotate(2deg); }
+
+    100% { transform: translateX(-118%) translateY(-20px) rotate(-2deg); }
+  }
+
+}
