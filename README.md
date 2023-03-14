@@ -5,7 +5,7 @@
 
   A Full Responsive Accordion Card Component<br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
-  <a href="https://accordion-card-frequently-asked-questions.netlify.app/"><strong>➥ Live Demo</strong></a>
+  <a href="https://accordion-card-frequently-asked-quest.netlify.app/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
